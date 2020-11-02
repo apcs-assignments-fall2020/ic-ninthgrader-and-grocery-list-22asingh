@@ -18,9 +18,16 @@ public class Student extends Person {
     }
 
     // toString()
+    @Override
     public String toString() {
         String str = this.getFirstName() + " " + this.getLastName() + ", " + this.classYear;
         return str;
+    }
+
+    //doSomething
+    @Override
+    public void doSomething(){
+        System.out.println("I'm studying.");
     }
 
     // Getters
